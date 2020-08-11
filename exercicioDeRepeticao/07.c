@@ -5,4 +5,24 @@
 
 int main(){
     
+    int quantNotas = 3;
+    int codigoA = 0;
+    float nota[3] = {0};
+    float soma;
+    float media; 
+
+            printf("Insira o código do aluno: \n");
+            scanf("%i", &codigoA);
+
+            printf("Isira 3 notas: \n");
+            for (int i = 0; i < quantNotas; i++)
+                scanf("%f", &nota[i]);
+        
+           for (int i = 0; i < quantNotas; i++)
+                soma += nota[i];
+
+        media = soma / quantNotas;
+        printf("A média do aluno com código %i é %f\n", codigoA, media);
+
+    
 }
