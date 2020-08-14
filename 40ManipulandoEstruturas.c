@@ -22,6 +22,9 @@ int main(void){
     //
     struct horario depois;
     depois.horas = agora.horas +10;
+    depois.minutos = agora.minutos;
+    depois.teste = 50.50/123;
+    depois.letra ='a';
     
     
 }
