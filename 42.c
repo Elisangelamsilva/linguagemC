@@ -9,15 +9,16 @@
 
 int main(void){
     
-    //função que recebe uma estrutura
+    //função que recebe uma estruturae passa uma estrutura
     struct horario teste(struct horario x);
 
+    //declaração da estrutura agora do tipo horario
     struct horario agora;
     agora.horas = 10;
     agora.minutos = 42;
     agora.segundos = 58;
 
-    //retorna e jogar em uma estrutura
+    //retorna e joga em uma estrutura
     struct horario proxima;
     //passando a estrutura horario para função teste
     proxima = teste(agora);

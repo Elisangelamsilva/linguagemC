@@ -4,26 +4,18 @@
 
 int main(){
     int a, resultado;
-    float fatorial(float num1);
+    int x = 0;
+    resultado = 1;
 
     printf("Digite um número: \n");
     scanf("%i", &a);
 
-    resultado = fatorial(a);
+    while (x <= a){
+        for (int i = 0; i >= 1; i--){
+            resultado *= i;
+        }
+        printf("O fatorial é %i\n", resultado);
+    }
 
-    printf("O fatorial do número é %i\n", resultado);
-    
-}
 
-float fatorial(float num1){
-    int resposta, x;
-    x = 0;
-
-    while (x >= num1){
-        for (; x >= 1; x--){
-            resposta *= x;
-        }    
-    };
-    
-    return resposta;
 }
