@@ -1,3 +1,4 @@
+// FINALIZADO
 // 14. Escrever um algoritmo que leia um número não determinado de valores e calcule a média aritmética dos valores lidos, a quantidade de valores positivos, a quantidade de valores negativos e o percentual de valores negativos e positivos. Mostre os resultados.
 
 #include <stdio.h>
@@ -11,14 +12,14 @@
 
     int quant = 0;
 
-    float gMedia = 0;
+    float gMedia = 0.0;
     int gSoma = 0;
 
     int contNeg = 0;
     int contPos = 0;
 
-    int porcNeg;
-    int porcPos;
+    float porcNeg =0.0;
+    float porcPos =0.0;
 
 int main(void){
 
@@ -34,7 +35,7 @@ int main(void){
         quantidadePositivosNegativos(valores);
             
 
-        float media(int quant);
+        void media(int quant);
         media(quant);
 
 }
@@ -59,14 +60,14 @@ float quantidadePositivosNegativos(int valores[]){
 
 
 
-float media(int quant){
-    gMedia = (gSoma/quant);
+void media(int quant){
+    gMedia = (float)(gSoma/quant);
 
-    porcNeg = (contNeg/gSoma)*100;
-    porcPos = (contPos/gSoma)*100;
+    porcNeg = (contNeg / (float) quant)*100.0;
+    porcPos = (contPos/ (float)quant)*100.0;
 
     printf("A média é: %f\n", gMedia);
-    printf("A porcentagem de positivos é %i e a porcentagem de negativos é %i\n", porcPos, porcNeg);
+    printf("A porcentagem de positivos é %f e a porcentagem de negativos é %f\n", porcPos, porcNeg);
 
 }
 
