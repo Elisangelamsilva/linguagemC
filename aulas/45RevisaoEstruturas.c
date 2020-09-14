@@ -11,7 +11,7 @@ int main(void){
 
     void receberHorarios(struct horario lista[5]);
     void printHorario(struct horario litsa[5]);
-    struct horario  listaHorarios[5];
+    struct horario listaHorarios[5];
 
     receberHorarios(listaHorarios);
     printfHorarios(listaHorarios);
