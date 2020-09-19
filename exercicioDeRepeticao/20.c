@@ -11,18 +11,16 @@
 
 int main(){
 
+    int somatorioNegativos;
+    int numerosObtidos[1000];
+    int index = 0;
+
     printf("Insira alguns números:\n");
-    scanf("");
 
-    int numerosObtidos[];
-
-    while(numerosObtidos ){
-        /* code */
+    while(scanf("%i",&numerosObtidos[index]) && numerosObtidos[index] != 0){
+        if(numerosObtidos[index] < 0)
+            somatorioNegativos = somatorioNegativos + numerosObtidos[index];
+        index++;
     }
-    
-
-
-
-
-
+    printf("A somatória dos numeros inteiros negativos é %i\n", somatorioNegativos);
 }
