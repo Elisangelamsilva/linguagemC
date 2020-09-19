@@ -1,3 +1,4 @@
+// FINALIZADO
 //17. Escrever um algoritmo que lê um número não determinado de pares de valores m,n, todos inteiros e positivos, um par de cada vez, e calcula e escreve a soma dos n inteiros consecutivos a partir de m inclusive.
 
 #include <stdio.h>
